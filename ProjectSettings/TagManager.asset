@@ -3,7 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - ingredient1
+  - ingredient2
+  - ingredient3
+  - ingredient4
+  - nonIngredient1
+  - nonIngredient2
+  - nonIngredient3
+  - nonIngredient4
   layers:
   - Default
   - TransparentFX
