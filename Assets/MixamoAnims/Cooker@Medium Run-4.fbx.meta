@@ -6,7 +6,117 @@ ModelImporter:
   - first:
       74: -203655887218126122
     second: mixamo.com
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cooker_Body
+    second: {fileID: 2100000, guid: 3a3f968376d8b4656a46b798ede6761f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cooker_Brown_Eye
+    second: {fileID: 2100000, guid: 58e46a077e3668c4fad1cb5cd1ec6519, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cooker_Brown_Eye.001
+    second: {fileID: 2100000, guid: e7d565d5167207e448712f06b330b466, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cooker_Button
+    second: {fileID: 2100000, guid: 3746eaf046e8a4f5dbaefd4eedcb93f5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cooker_Button.001
+    second: {fileID: 2100000, guid: 2ac50779396794891be6688003897300, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cooker_Button.002
+    second: {fileID: 2100000, guid: 3ef78aaf47a264a16affb1400be9bc8f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cooker_Button.003
+    second: {fileID: 2100000, guid: 510282060523e47e2ba7389e2e7426c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cooker_Button.004
+    second: {fileID: 2100000, guid: 23a27995b88bf483185cd9c5a7f2b4bd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cooker_Button.005
+    second: {fileID: 2100000, guid: db3bac36ab2454212a807a5902b1bf0a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cooker_Button.006
+    second: {fileID: 2100000, guid: e25cd599a7c42469cad6d3af728833ad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cooker_Button.007
+    second: {fileID: 2100000, guid: 9f82118940f234fca9e470252baeaa78, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cooker_Button.008
+    second: {fileID: 2100000, guid: 847f08262df4549e3947c07bf52ce444, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cooker_Button.009
+    second: {fileID: 2100000, guid: 875304fbcf07147d29da69991c8ad7c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cooker_Clothes
+    second: {fileID: 2100000, guid: 05a63714f0d4c504c9c1b98738315454, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cooker_Eye_Black
+    second: {fileID: 2100000, guid: d1e8d235e5b8f4f5aaec9568baf7be5d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cooker_Eye_Black.001
+    second: {fileID: 2100000, guid: eaaf4df7afb384dc585e74bc9709df81, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cooker_Hair
+    second: {fileID: 2100000, guid: 68e47b1a5165d41ee80cd1756e570adb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cooker_Lips
+    second: {fileID: 2100000, guid: 4bf905110ca634d7ea7b298fbe3fbcd0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cooker_Shoes
+    second: {fileID: 2100000, guid: c19edfaa1fe2747afae9670b665dd106, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cooker_Yaka
+    second: {fileID: 2100000, guid: dff385d98942e4565b652dd34bb47c11, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cooker_eye
+    second: {fileID: 2100000, guid: 0433fba37cf014fa3b83ef97076534cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cooker_eye.001
+    second: {fileID: 2100000, guid: 1a7947da3dbe04cbf8f673e365ae09ad, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
