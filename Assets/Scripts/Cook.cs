@@ -6,6 +6,14 @@ public class Cook : MonoBehaviour
 {
     LevelManager levelmanager;
     private int collectCount = 0;
+    [SerializeField] public GameObject collectableVisuals1;
+    [SerializeField] public GameObject collectableVisuals2;
+    [SerializeField] public GameObject collectableVisuals3;
+    [SerializeField] public GameObject collectableVisuals4;
+    [SerializeField] public GameObject collectableVisuals5;
+    [SerializeField] public GameObject collectableVisuals6;
+    [SerializeField] public GameObject collectableVisuals7;
+    [SerializeField] public GameObject collectableVisuals8;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +34,7 @@ public class Cook : MonoBehaviour
             levelmanager.ingredient1Amount -= 1;
             levelmanager.wallet -= levelmanager.ingredient1Cost;
             collectCount++;
-            collision.gameObject.SetActive(false);
+            MarketCarVisuals();
         }
 
         if (collision.gameObject.tag == "ingredient2")
@@ -34,7 +42,7 @@ public class Cook : MonoBehaviour
             levelmanager.ingredient2Amount -= 1;
             levelmanager.wallet -= levelmanager.ingredient2Cost;
             collectCount++;
-            collision.gameObject.SetActive(false);
+            MarketCarVisuals();
         }
 
         if (collision.gameObject.tag == "ingredient3")
@@ -42,7 +50,7 @@ public class Cook : MonoBehaviour
             levelmanager.ingredient3Amount -= 1;
             levelmanager.wallet -= levelmanager.ingredient2Cost;
             collectCount++;
-            collision.gameObject.SetActive(false);
+            MarketCarVisuals();
         }
 
         if (collision.gameObject.tag == "ingredient4")
@@ -50,7 +58,7 @@ public class Cook : MonoBehaviour
             levelmanager.ingredient4Amount -= 1;
             levelmanager.wallet -= levelmanager.ingredient2Cost;
             collectCount++;
-            collision.gameObject.SetActive(false);
+            MarketCarVisuals();
         }
 
         //buradan aşağıdakiler istenmeyen malzemeler bunlarla collision yapıldığında kırmızı negatif bi ifade koyacağız cüzdandan eksilirken
@@ -58,28 +66,71 @@ public class Cook : MonoBehaviour
         {
             levelmanager.wallet -= levelmanager.nonIngredient1Cost;
             collectCount++;
-            collision.gameObject.SetActive(false);
+            MarketCarVisuals();
         }
 
         if (collision.gameObject.tag == "nonIngredient2")
         {
             levelmanager.wallet -= levelmanager.nonIngredient2Cost;
             collectCount++;
-            collision.gameObject.SetActive(false);
+            MarketCarVisuals();
         }
 
         if (collision.gameObject.tag == "nonIngredient3")
         {
             levelmanager.wallet -= levelmanager.nonIngredient3Cost;
             collectCount++;
-            collision.gameObject.SetActive(false);
+            MarketCarVisuals();
         }
 
         if (collision.gameObject.tag == "nonIngredient4")
         {
             levelmanager.wallet -= levelmanager.nonIngredient4Cost;
             collectCount++;
-            collision.gameObject.SetActive(false);
+            MarketCarVisuals();
+        }
+    }
+
+    private void MarketCarVisuals()
+    {
+        if(collectCount == 3)
+        {
+            collectableVisuals1.SetActive(true);
+        }
+
+        if (collectCount == 5)
+        {
+            collectableVisuals2.SetActive(true);
+        }
+
+        if (collectCount == 7)
+        {
+            collectableVisuals3.SetActive(true);
+        }
+
+        if (collectCount == 9)
+        {
+            collectableVisuals4.SetActive(true);
+        }
+
+        if (collectCount == 11)
+        {
+            collectableVisuals5.SetActive(true);
+        }
+
+        if (collectCount == 13)
+        {
+            collectableVisuals6.SetActive(true);
+        }
+
+        if (collectCount == 16)
+        {
+            collectableVisuals7.SetActive(true);
+        }
+
+        if (collectCount == 18)
+        {
+            collectableVisuals8.SetActive(true);
         }
     }
 }

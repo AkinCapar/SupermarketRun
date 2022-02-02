@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 2297698642564320047}
   - component: {fileID: 4037450627006169061}
   - component: {fileID: 1468963977768996429}
+  - component: {fileID: 8238651185084840996}
   m_Layer: 0
   m_Name: Lettuce
-  m_TagString: Untagged
+  m_TagString: ingredient3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26,13 +27,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2524016369952808496}
-  m_LocalRotation: {x: -0, y: -0, z: 0.1736482, w: 0.9848078}
+  m_LocalRotation: {x: 0, y: 0, z: 0.17364816, w: 0.9848078}
   m_LocalPosition: {x: 2.79, y: 0, z: 5.47}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 20}
 --- !u!33 &2297698642564320047
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -95,3 +96,17 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1.0144378
   m_Center: {x: 0.35931954, y: 0.84587467, z: -0.111759566}
+--- !u!114 &8238651185084840996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2524016369952808496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d4e07d4d36d74fcfb4730ddf821a230, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectingPlace: {fileID: 0}
+  moveTowardsSpeed: 0.2
