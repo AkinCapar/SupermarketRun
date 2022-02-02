@@ -5,6 +5,7 @@ using UnityEngine;
 public class Cook : MonoBehaviour
 {
     LevelManager levelmanager;
+    private int collectCount = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,7 @@ public class Cook : MonoBehaviour
         {
             levelmanager.ingredient1Amount -= 1;
             levelmanager.wallet -= levelmanager.ingredient1Cost;
+            collectCount++;
             collision.gameObject.SetActive(false);
         }
 
@@ -31,6 +33,7 @@ public class Cook : MonoBehaviour
         {
             levelmanager.ingredient2Amount -= 1;
             levelmanager.wallet -= levelmanager.ingredient2Cost;
+            collectCount++;
             collision.gameObject.SetActive(false);
         }
 
@@ -38,6 +41,7 @@ public class Cook : MonoBehaviour
         {
             levelmanager.ingredient3Amount -= 1;
             levelmanager.wallet -= levelmanager.ingredient2Cost;
+            collectCount++;
             collision.gameObject.SetActive(false);
         }
 
@@ -45,6 +49,7 @@ public class Cook : MonoBehaviour
         {
             levelmanager.ingredient4Amount -= 1;
             levelmanager.wallet -= levelmanager.ingredient2Cost;
+            collectCount++;
             collision.gameObject.SetActive(false);
         }
 
@@ -52,24 +57,28 @@ public class Cook : MonoBehaviour
         if(collision.gameObject.tag == "nonIngredient1")
         {
             levelmanager.wallet -= levelmanager.nonIngredient1Cost;
+            collectCount++;
             collision.gameObject.SetActive(false);
         }
 
         if (collision.gameObject.tag == "nonIngredient2")
         {
             levelmanager.wallet -= levelmanager.nonIngredient2Cost;
+            collectCount++;
             collision.gameObject.SetActive(false);
         }
 
         if (collision.gameObject.tag == "nonIngredient3")
         {
             levelmanager.wallet -= levelmanager.nonIngredient3Cost;
+            collectCount++;
             collision.gameObject.SetActive(false);
         }
 
         if (collision.gameObject.tag == "nonIngredient4")
         {
             levelmanager.wallet -= levelmanager.nonIngredient4Cost;
+            collectCount++;
             collision.gameObject.SetActive(false);
         }
     }
