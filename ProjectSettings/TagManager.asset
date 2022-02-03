@@ -19,8 +19,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Cake
+  - Plate
   - 
   - 
   - 
@@ -48,4 +48,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Plate
+    uniqueID: 2878969799
+    locked: 0
+  - name: Cake
+    uniqueID: 1411705277
     locked: 0
