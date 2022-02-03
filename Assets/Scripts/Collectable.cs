@@ -19,7 +19,7 @@ public class Collectable : MonoBehaviour
     {
         if (collected == true)
         {
-            transform.position = Vector3.MoveTowards(transform.position, collectingPlace.position, moveTowardsSpeed);
+            transform.position = Vector3.MoveTowards(transform.position, collectingPlace.position, moveTowardsSpeed * 2);
         }
     }
 
@@ -39,7 +39,7 @@ public class Collectable : MonoBehaviour
         var sequence = DOTween.Sequence();
 
         sequence.Append(
-            transform.DOMove(Vector3.up * 3, .5f)
+            transform.DOMove(Vector3.up * 3, .25f)
                      .SetRelative()
                      .SetEase(Ease.InOutSine)                     
             );

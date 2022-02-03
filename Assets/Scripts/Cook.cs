@@ -5,6 +5,7 @@ using UnityEngine;
 public class Cook : MonoBehaviour
 {
     LevelManager levelmanager;
+    Gate gate;
     private int collectCount = 0;
     [SerializeField] public GameObject collectableVisuals1;
     [SerializeField] public GameObject collectableVisuals2;
@@ -19,6 +20,7 @@ public class Cook : MonoBehaviour
     void Start()
     {
         levelmanager = LevelManager.instance;
+        gate = Gate.instance;
     }
 
     // Update is called once per frame
@@ -59,6 +61,16 @@ public class Cook : MonoBehaviour
             levelmanager.wallet -= levelmanager.ingredient2Cost;
             collectCount++;
             MarketCarVisuals();
+        }
+
+        if(collision.gameObject.name == "leftDoorPrize")
+        {
+            gate.PassedLeftGate();
+        }
+
+        if(collision.gameObject.name == "rightDoorPrize")
+        {
+            gate.PassedRightGate();
         }
 
         //buradan aşağıdakiler istenmeyen malzemeler bunlarla collision yapıldığında kırmızı negatif bi ifade koyacağız cüzdandan eksilirken
