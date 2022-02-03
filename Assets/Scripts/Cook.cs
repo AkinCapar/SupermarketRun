@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class Cook : MonoBehaviour
 {
@@ -100,6 +101,13 @@ public class Cook : MonoBehaviour
             levelmanager.wallet -= levelmanager.nonIngredient4Cost;
             collectCount++;
             MarketCarVisuals();
+        }
+
+        if (collision.gameObject.tag == "obstacle")
+        {
+            transform.DOMove(-transform.forward * 5, .25f)
+                     .SetRelative()
+                     .SetEase(Ease.OutCubic);
         }
     }
 

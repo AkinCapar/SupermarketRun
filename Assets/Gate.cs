@@ -65,15 +65,15 @@ public class Gate : MonoBehaviour
     {
         var sequence = DOTween.Sequence();
 
-        sequence.Append(prizeMoney.transform.DOMove(transform.up * 3, .5f)
+        sequence.Append(prizeMoney.transform.DOMove(transform.up * 3, .3f)
                                             .SetRelative()
                                             .SetEase(Ease.InOutSine)
                                             );
 
-        sequence.Append(prizeMoney.transform.DORotate(new Vector3(0, 270, 90), .5f)
+        sequence.Append(prizeMoney.transform.DORotate(new Vector3(0, 270, 90), .25f)
                                             .SetRelative()
                                             .SetEase(Ease.InOutSine)
                                             );
-        sequence.Append(prizeMoney.transform.DOScale(0, .5f));
+        sequence.Append(prizeMoney.transform.DOScale(0, .3f));
     }
 }
