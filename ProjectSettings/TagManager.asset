@@ -12,6 +12,7 @@ TagManager:
   - nonIngredient2
   - nonIngredient3
   - nonIngredient4
+  - obstacle
   layers:
   - Default
   - TransparentFX
