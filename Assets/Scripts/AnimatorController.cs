@@ -50,6 +50,6 @@ public class AnimatorController : MonoBehaviour
         cooker.SetActive(true);
         animDance.SetBool("Dance",true);
         shineEffect.transform.position = new Vector3(0.04f, 0.04f, -2.9f);
-        
+        yield return new WaitForSeconds(1f);
     }
 }
