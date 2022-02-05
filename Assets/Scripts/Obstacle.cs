@@ -47,12 +47,14 @@ public class Obstacle : MonoBehaviour
         var sequence = DOTween.Sequence();
 
         sequence.Append(closestCollectable.transform.DOMove( new Vector3(Random.Range(-10,10), 5, Random.Range(-10,10)), 1)
-                                    .SetRelative()
-                                    .SetEase(Ease.InOutSine));
+                                                    .SetRelative()
+                                                    .SetEase(Ease.InOutSine));
+
         sequence.Append(closestCollectable.transform.DOMove(-transform.up * 50, 2.5f)
-                            .SetRelative()
-                            .SetEase(Ease.InOutSine));
-        closestCollectable.GetComponent<Collectable>().enabled = false;
+                                                    .SetRelative()
+                                                    .SetEase(Ease.InOutSine));
+
+        closestCollectable.GetComponent<Collectable>().enabled = false; // kaybettiğini tekrar kaybedemesin diye
     }
 
     private void lostCollectableScaleAnimation(Collectable closestCollectable)
