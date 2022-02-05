@@ -1330,6 +1330,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4dd63dc8523244df9fb889450d47d9a, type: 3}
+--- !u!1 &1385094024 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1974565034622399951, guid: a86c586a633d34d4db607b3591dd655e, type: 3}
+  m_PrefabInstance: {fileID: 7800354247227174575}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1385094026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385094024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59828c1b83cc64ca19a66d28afca55ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1400716119
 GameObject:
   m_ObjectHideFlags: 0
@@ -2489,6 +2506,10 @@ PrefabInstance:
     - target: {fileID: 2385692308475749881, guid: b4e782ec5d7f14f7f9f7ac73b6721c19, type: 3}
       propertyPath: m_Name
       value: CookParent
+      objectReference: {fileID: 0}
+    - target: {fileID: 4128609479104196396, guid: b4e782ec5d7f14f7f9f7ac73b6721c19, type: 3}
+      propertyPath: moveSpeed
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8383739155998077860, guid: b4e782ec5d7f14f7f9f7ac73b6721c19, type: 3}
       propertyPath: m_RootOrder
