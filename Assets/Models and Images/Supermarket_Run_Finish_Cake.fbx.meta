@@ -18,12 +18,22 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Supermarket_Run_Cake_Band
-    second: {fileID: 2100000, guid: 3169c808714f59f48aa9d38ea4d34119, type: 2}
+    second: {fileID: 2100000, guid: 4d2369de4a1b93346a7dc136ebd04135, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Supermarket_Run_Cherry.004
+    second: {fileID: 2100000, guid: 25bb73f36db98184eb993b282714e4bf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Supermarket_Run_Cherry_Trash.001
+    second: {fileID: 2100000, guid: fcca163bda8a0b14bbda164d88cdb457, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Supermarket_Run_Cream
-    second: {fileID: 2100000, guid: e354b7921faf263458404badae9f18b6, type: 2}
+    second: {fileID: 2100000, guid: 1c0b8ab0ae0834645bb751722ba8adc0, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -33,47 +43,47 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Supermarket_Run_Cream.002
-    second: {fileID: 2100000, guid: 4ad24d8248f0093458b1a9a806ba577c, type: 2}
+    second: {fileID: 2100000, guid: 2d8964e229547c640a661bc8b092b703, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Supermarket_Run_Cream.003
-    second: {fileID: 2100000, guid: b0813106126581d45880c6d367f3eefb, type: 2}
+    second: {fileID: 2100000, guid: 2d8964e229547c640a661bc8b092b703, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Supermarket_Run_Cream.004
-    second: {fileID: 2100000, guid: 79909e199c4fa5a4f896bab148b250f2, type: 2}
+    second: {fileID: 2100000, guid: 2d8964e229547c640a661bc8b092b703, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Supermarket_Run_Cream.005
-    second: {fileID: 2100000, guid: b0761b3ababa1b1409d49644dd1a896d, type: 2}
+    second: {fileID: 2100000, guid: 2d8964e229547c640a661bc8b092b703, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Supermarket_Run_Cream.006
-    second: {fileID: 2100000, guid: 959f0f2b22516974891775a7b4adc1ef, type: 2}
+    second: {fileID: 2100000, guid: 2d8964e229547c640a661bc8b092b703, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Supermarket_Run_Cream.007
-    second: {fileID: 2100000, guid: f2f8e7d4915b85e4fa170a2fa8465164, type: 2}
+    second: {fileID: 2100000, guid: 2d8964e229547c640a661bc8b092b703, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Supermarket_Run_Cream.008
-    second: {fileID: 2100000, guid: 1a9db540f5133e247b45e41668087801, type: 2}
+    second: {fileID: 2100000, guid: 2d8964e229547c640a661bc8b092b703, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Supermarket_Run_Cream.009
-    second: {fileID: 2100000, guid: 436a68fa1bc806041ae6b4ffd738e2ce, type: 2}
+    second: {fileID: 2100000, guid: 2d8964e229547c640a661bc8b092b703, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Supermarket_Run_Cream.010
-    second: {fileID: 2100000, guid: 34ddb2f313a953946985f8f67c580de2, type: 2}
+    second: {fileID: 2100000, guid: 2d8964e229547c640a661bc8b092b703, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

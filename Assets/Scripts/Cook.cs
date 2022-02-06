@@ -72,6 +72,7 @@ public class Cook : MonoBehaviour
         if(collision.gameObject.name == "rightDoorPrize")
         {
             gate.PassedRightGate();
+            Debug.Log("lolololo");
         }
 
         //buradan aşağıdakiler istenmeyen malzemeler bunlarla collision yapıldığında kırmızı negatif bi ifade koyacağız cüzdandan eksilirken

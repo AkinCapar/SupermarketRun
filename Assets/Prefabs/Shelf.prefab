@@ -92,6 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1165518349080424309}
   - component: {fileID: 1974565034622399950}
+  - component: {fileID: 1385094026}
   m_Layer: 0
   m_Name: Shelf
   m_TagString: obstacle
@@ -106,7 +107,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1974565034622399951}
-  m_LocalRotation: {x: -0, y: -0.36226234, z: -0, w: 0.9320762}
+  m_LocalRotation: {x: 0, y: -0.36225906, z: 0, w: 0.93207747}
   m_LocalPosition: {x: 2.9, y: 0, z: 16.26}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -131,6 +132,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0017374, y: 3.2726257, z: 1.7461293}
   m_Center: {x: -0.49049914, y: 1.5927528, z: -0.00028330088}
+--- !u!114 &1385094026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974565034622399951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59828c1b83cc64ca19a66d28afca55ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2194235952034851846
 GameObject:
   m_ObjectHideFlags: 0
