@@ -616,7 +616,6 @@ MonoBehaviour:
   prizeIngredient: {fileID: 5271762087324616089}
   prizeIngredientAmount: 2
   prizeMoneyAmount: 50
-  prizeMoney: {fileID: 6517841857172335989}
 --- !u!1 &6517841856687477145
 GameObject:
   m_ObjectHideFlags: 0

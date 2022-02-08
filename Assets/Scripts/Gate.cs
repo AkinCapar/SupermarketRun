@@ -5,20 +5,15 @@ using DG.Tweening;
 
 public class Gate : MonoBehaviour
 {
-    public static Gate instance;
-
     [SerializeField] private GameObject prizeIngredient;
     [SerializeField] private int prizeIngredientAmount;
     [SerializeField] private int prizeMoneyAmount;
-    [SerializeField] private GameObject prizeMoney;
+    //[SerializeField] private GameObject prizeMoney;
     LevelManager levelmanager;
 
     private void Awake()
     {
-        if(instance == null)
-        {
-            instance = this;
-        }
+
 
     }
 
@@ -56,25 +51,25 @@ public class Gate : MonoBehaviour
         }
     }
 
-    public void PassedRightGate()
+    public void PassedRightGate(GameObject coin)
     {
         levelmanager.wallet += prizeMoneyAmount;
-        PrizeMoneyAnimation();
+        PrizeMoneyAnimation(coin);
     }
 
-    private void PrizeMoneyAnimation()
+    private void PrizeMoneyAnimation(GameObject coin)
     {
         var sequence = DOTween.Sequence();
 
-        sequence.Append(prizeMoney.transform.DOMove(transform.up * 3, .3f)
+        sequence.Append(coin.transform.DOMove(transform.up * 3, .3f)
                                             .SetRelative()
                                             .SetEase(Ease.InOutSine)
                                             );
 
-        sequence.Append(prizeMoney.transform.DORotate(new Vector3(0, 270, 90), .25f)
+        sequence.Append(coin.transform.DORotate(new Vector3(0, 270, 90), .25f)
                                             .SetRelative()
                                             .SetEase(Ease.InOutSine)
                                             );
-        sequence.Append(prizeMoney.transform.DOScale(0, .3f));
+        sequence.Append(coin.transform.DOScale(0, .3f));
     }
 }

@@ -21,7 +21,7 @@ public class Cook : MonoBehaviour
     void Start()
     {
         levelmanager = LevelManager.instance;
-        gate = Gate.instance;
+        gate = FindObjectOfType<Gate>();
     }
 
     // Update is called once per frame
@@ -32,7 +32,7 @@ public class Cook : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision) //malzemelerin ihtiyaçtan ve cüzdandaki paradan düşmesi
     {
-        if(collision.gameObject.tag == "ingredient1")
+        if(collision.gameObject.tag == "ingredient1" && levelmanager.wallet >= levelmanager.ingredient1Cost)
         {
             levelmanager.ingredient1Amount -= 1;
             levelmanager.wallet -= levelmanager.ingredient1Cost;
@@ -40,7 +40,7 @@ public class Cook : MonoBehaviour
             MarketCarVisuals();
         }
 
-        if (collision.gameObject.tag == "ingredient2")
+        if (collision.gameObject.tag == "ingredient2" && levelmanager.wallet >= levelmanager.ingredient2Cost)
         {
             levelmanager.ingredient2Amount -= 1;
             levelmanager.wallet -= levelmanager.ingredient2Cost;
@@ -48,7 +48,7 @@ public class Cook : MonoBehaviour
             MarketCarVisuals();
         }
 
-        if (collision.gameObject.tag == "ingredient3")
+        if (collision.gameObject.tag == "ingredient3" && levelmanager.wallet >= levelmanager.ingredient3Cost)
         {
             levelmanager.ingredient3Amount -= 1;
             levelmanager.wallet -= levelmanager.ingredient2Cost;
@@ -56,7 +56,7 @@ public class Cook : MonoBehaviour
             MarketCarVisuals();
         }
 
-        if (collision.gameObject.tag == "ingredient4")
+        if (collision.gameObject.tag == "ingredient4" && levelmanager.wallet >= levelmanager.ingredient4Cost)
         {
             levelmanager.ingredient4Amount -= 1;
             levelmanager.wallet -= levelmanager.ingredient2Cost;
@@ -71,33 +71,33 @@ public class Cook : MonoBehaviour
 
         if(collision.gameObject.name == "rightDoorPrize")
         {
-            gate.PassedRightGate();
+            gate.PassedRightGate(collision.gameObject);
             Debug.Log("lolololo");
         }
 
         //buradan aşağıdakiler istenmeyen malzemeler bunlarla collision yapıldığında kırmızı negatif bi ifade koyacağız cüzdandan eksilirken
-        if(collision.gameObject.tag == "nonIngredient1")
+        if(collision.gameObject.tag == "nonIngredient1" && levelmanager.wallet >= levelmanager.nonIngredient1Cost)
         {
             levelmanager.wallet -= levelmanager.nonIngredient1Cost;
             collectCount++;
             MarketCarVisuals();
         }
 
-        if (collision.gameObject.tag == "nonIngredient2")
+        if (collision.gameObject.tag == "nonIngredient2" && levelmanager.wallet >= levelmanager.nonIngredient2Cost)
         {
             levelmanager.wallet -= levelmanager.nonIngredient2Cost;
             collectCount++;
             MarketCarVisuals();
         }
 
-        if (collision.gameObject.tag == "nonIngredient3")
+        if (collision.gameObject.tag == "nonIngredient3" && levelmanager.wallet >= levelmanager.nonIngredient3Cost)
         {
             levelmanager.wallet -= levelmanager.nonIngredient3Cost;
             collectCount++;
             MarketCarVisuals();
         }
 
-        if (collision.gameObject.tag == "nonIngredient4")
+        if (collision.gameObject.tag == "nonIngredient4" && levelmanager.wallet >= levelmanager.nonIngredient4Cost)
         {
             levelmanager.wallet -= levelmanager.nonIngredient4Cost;
             collectCount++;

@@ -9,10 +9,14 @@ public class Collectable : MonoBehaviour
     private Collider myCollider;
     [SerializeField] float moveTowardsSpeed;
     private bool collected = false;
+    private int cost;
+    LevelManager levelmanager;
 
     private void Start()
     {
+        levelmanager = LevelManager.instance;
         myCollider = gameObject.GetComponent<Collider>();
+        CheckingWhichIngredient();
     }
 
     private void Update()
@@ -25,7 +29,7 @@ public class Collectable : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player" && cost <= levelmanager.wallet)
         {
             myCollider.enabled = false;
             MoveToCarSequence();
@@ -49,4 +53,29 @@ public class Collectable : MonoBehaviour
     {
         transform.DOScale(0, 2);
     }
+
+
+    private void CheckingWhichIngredient()
+    {
+        if (gameObject.tag == "ingredient1")
+        {
+            cost = levelmanager.ingredient1Cost;
+        }
+
+        if (gameObject.tag == "ingredient2")
+        {
+            cost = levelmanager.ingredient2Cost;
+        }
+
+        if (gameObject.tag == "ingredient3")
+        {
+            cost = levelmanager.ingredient3Cost;
+        }
+
+        if (gameObject.tag == "ingredient4")
+        {
+            cost = levelmanager.ingredient4Cost;
+        }
+    }
+
 }
