@@ -35,7 +35,7 @@ public class Cook : MonoBehaviour
         if(collision.gameObject.tag == "ingredient1" && levelmanager.wallet >= levelmanager.ingredient1Cost)
         {
             levelmanager.ingredient1Amount -= 1;
-            levelmanager.wallet -= levelmanager.ingredient1Cost;
+            //levelmanager.wallet -= levelmanager.ingredient1Cost;
             collectCount++;
             MarketCarVisuals();
         }
@@ -43,7 +43,7 @@ public class Cook : MonoBehaviour
         if (collision.gameObject.tag == "ingredient2" && levelmanager.wallet >= levelmanager.ingredient2Cost)
         {
             levelmanager.ingredient2Amount -= 1;
-            levelmanager.wallet -= levelmanager.ingredient2Cost;
+            //levelmanager.wallet -= levelmanager.ingredient2Cost;
             collectCount++;
             MarketCarVisuals();
         }
@@ -51,7 +51,7 @@ public class Cook : MonoBehaviour
         if (collision.gameObject.tag == "ingredient3" && levelmanager.wallet >= levelmanager.ingredient3Cost)
         {
             levelmanager.ingredient3Amount -= 1;
-            levelmanager.wallet -= levelmanager.ingredient2Cost;
+            //levelmanager.wallet -= levelmanager.ingredient3Cost;
             collectCount++;
             MarketCarVisuals();
         }
@@ -59,7 +59,7 @@ public class Cook : MonoBehaviour
         if (collision.gameObject.tag == "ingredient4" && levelmanager.wallet >= levelmanager.ingredient4Cost)
         {
             levelmanager.ingredient4Amount -= 1;
-            levelmanager.wallet -= levelmanager.ingredient2Cost;
+            //levelmanager.wallet -= levelmanager.ingredient4Cost;
             collectCount++;
             MarketCarVisuals();
         }

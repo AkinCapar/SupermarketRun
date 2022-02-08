@@ -7752,7 +7752,7 @@ MonoBehaviour:
   nonIngredient2Cost: 5
   nonIngredient3Cost: 15
   nonIngredient4Cost: 5
-  wallet: 10
+  wallet: 100
   shoppingList: {fileID: 0}
 --- !u!4 &1400716121
 Transform:
@@ -13185,7 +13185,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4128609479104196396, guid: b4e782ec5d7f14f7f9f7ac73b6721c19, type: 3}
       propertyPath: moveSpeed
-      value: 1.8
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4128609479104196396, guid: b4e782ec5d7f14f7f9f7ac73b6721c19, type: 3}
+      propertyPath: sensivity
+      value: 0.0125
       objectReference: {fileID: 0}
     - target: {fileID: 7807374913231740122, guid: b4e782ec5d7f14f7f9f7ac73b6721c19, type: 3}
       propertyPath: m_Enabled

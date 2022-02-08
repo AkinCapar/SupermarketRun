@@ -31,6 +31,7 @@ public class Collectable : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player" && cost <= levelmanager.wallet)
         {
+            levelmanager.wallet -= cost;
             myCollider.enabled = false;
             MoveToCarSequence();
             Scaling();
