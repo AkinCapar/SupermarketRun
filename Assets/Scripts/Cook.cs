@@ -78,28 +78,28 @@ public class Cook : MonoBehaviour
         //buradan aşağıdakiler istenmeyen malzemeler bunlarla collision yapıldığında kırmızı negatif bi ifade koyacağız cüzdandan eksilirken
         if(collision.gameObject.tag == "nonIngredient1" && levelmanager.wallet >= levelmanager.nonIngredient1Cost)
         {
-            levelmanager.wallet -= levelmanager.nonIngredient1Cost;
+            //levelmanager.wallet -= levelmanager.nonIngredient1Cost;
             collectCount++;
             MarketCarVisuals();
         }
 
         if (collision.gameObject.tag == "nonIngredient2" && levelmanager.wallet >= levelmanager.nonIngredient2Cost)
         {
-            levelmanager.wallet -= levelmanager.nonIngredient2Cost;
+            //levelmanager.wallet -= levelmanager.nonIngredient2Cost;
             collectCount++;
             MarketCarVisuals();
         }
 
         if (collision.gameObject.tag == "nonIngredient3" && levelmanager.wallet >= levelmanager.nonIngredient3Cost)
         {
-            levelmanager.wallet -= levelmanager.nonIngredient3Cost;
+            //levelmanager.wallet -= levelmanager.nonIngredient3Cost;
             collectCount++;
             MarketCarVisuals();
         }
 
         if (collision.gameObject.tag == "nonIngredient4" && levelmanager.wallet >= levelmanager.nonIngredient4Cost)
         {
-            levelmanager.wallet -= levelmanager.nonIngredient4Cost;
+            //levelmanager.wallet -= levelmanager.nonIngredient4Cost;
             collectCount++;
             MarketCarVisuals();
         }

@@ -77,6 +77,26 @@ public class Collectable : MonoBehaviour
         {
             cost = levelmanager.ingredient4Cost;
         }
+
+        if (gameObject.tag == "nonIngredient1")
+        {
+            cost = levelmanager.nonIngredient1Cost;
+        }
+
+        if (gameObject.tag == "nonIngredient2")
+        {
+            cost = levelmanager.nonIngredient2Cost;
+        }
+
+        if(gameObject.tag == "nonIngredient3")
+        {
+            cost = levelmanager.nonIngredient3Cost;
+        }
+
+        if (gameObject.tag == "nonIngredient4")
+        {
+            cost = levelmanager.nonIngredient4Cost;
+        }
     }
 
 }
