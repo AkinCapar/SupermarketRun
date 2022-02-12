@@ -56814,7 +56814,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sensivity: 0.0125
-  moveSpeed: 12
+  moveSpeed: 15
 --- !u!54 &7807374913231740124
 Rigidbody:
   m_ObjectHideFlags: 0

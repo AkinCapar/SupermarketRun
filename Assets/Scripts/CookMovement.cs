@@ -9,11 +9,25 @@ public class CookMovement : MonoBehaviour
     [SerializeField] float sensivity = 0.25f;
     [SerializeField] float moveSpeed = 1f;
     private float xPos;
+    private Animator myAnimator;
+    private bool canRun = false;
+    SceneManagerAkin scenemanager;
+
+    private void Start()
+    {
+        myAnimator = gameObject.GetComponentInChildren<Animator>();
+        scenemanager = SceneManagerAkin.instance;
+    }
 
     private void Update()
     {
-        Moving();
-        SwerveControl();
+        TapToPlay();
+
+        if (canRun == true)
+        {
+            Moving();
+            SwerveControl();
+        }
     }
 
     private void Moving()
@@ -35,6 +49,18 @@ public class CookMovement : MonoBehaviour
 
             xPos = Mathf.Clamp((transform.position.x - (difference.x * sensivity)), -4f, 4f);
             transform.position = new Vector3(xPos, transform.position.y, transform.position.z);
+        }
+    }
+
+    private void TapToPlay()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            gameObject.GetComponent<CookMovement>().enabled = true;
+            myAnimator.SetBool("isRunning", true);
+            canRun = true;
+            scenemanager.DeactivateStartCanvas();
+            scenemanager.ActivateGameCanvas();
         }
     }
 }
