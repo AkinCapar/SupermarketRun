@@ -122,6 +122,22 @@ public class Cook : MonoBehaviour
                      .SetRelative()
                      .SetEase(Ease.OutCubic);
         }
+
+
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.name == "Finish")
+        {
+            Invoke("PlayerCookSetActiveFalse", 1f);
+            levelmanager.WinOrLoseCondition();
+        }
+    }
+
+    private void PlayerCookSetActiveFalse()
+    {
+        gameObject.SetActive(false);
     }
 
     private void MarketCarVisuals()
@@ -161,9 +177,9 @@ public class Cook : MonoBehaviour
             collectableVisuals7.SetActive(true);
         }
 
-        if (collectCount == 18)
-        {
-            collectableVisuals8.SetActive(true);
-        }
+        //if (collectCount == 18)
+        //{
+        //    collectableVisuals8.SetActive(true);
+        //}
     }
 }

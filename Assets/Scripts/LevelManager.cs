@@ -8,6 +8,14 @@ public class LevelManager : MonoBehaviour
 {
     public static LevelManager instance;
 
+    SceneManagerAkin scenemanager;
+
+    [SerializeField] public GameObject plateCam;
+    [SerializeField] public GameObject danceCam;
+    [SerializeField] public GameObject finalMeal;
+    [SerializeField] public GameObject finalPlayer;
+    [SerializeField] public GameObject plateAnimations;
+
     [Header("Ingredients")]
     [SerializeField] public GameObject ingredient1;
     [SerializeField] public GameObject ingredient2;
@@ -50,6 +58,7 @@ public class LevelManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        scenemanager = SceneManagerAkin.instance;
 
     }
 
@@ -61,17 +70,48 @@ public class LevelManager : MonoBehaviour
 
     public void WinOrLoseCondition()
     {
+
+
         if (ingredient1Amount == 0 && ingredient2Amount == 0 && ingredient3Amount == 0 && ingredient4Amount == 0 && wallet >= 0)
         {
-            // WIN
-            //TODO finish noktasını geçince yemeği yapabilecek
+            plateCam.SetActive(true);
+            finalMeal.SetActive(true);
+            StartCoroutine(ActivatePlateAnim());
+            scenemanager.DeactivateGameCanvas();
+            StartCoroutine(ActivateDanceCam());
         }
 
         else
         {
-            //dandik bozuk yemek görünecek
+            plateCam.SetActive(true);
+            StartCoroutine(ActivatePlateAnim());
+            scenemanager.DeactivateGameCanvas();
+            StartCoroutine(ActivateDanceCam());
         }
 
     }
 
+    IEnumerator ActivateDanceCam()
+    {
+        yield return new WaitForSeconds(5);
+        finalPlayer.SetActive(true);
+        danceCam.SetActive(true);
+        if (ingredient1Amount == 0 && ingredient2Amount == 0 && ingredient3Amount == 0 && ingredient4Amount == 0 && wallet >= 0)
+        {
+            scenemanager.ActivateWinCanvas();
+            GetComponentInChildren<Animator>().SetBool("winGame", true);
+        }
+        else
+        {
+            scenemanager.ActivateLoseCanvas();
+            GetComponentInChildren<Animator>().SetBool("loseGame", true);
+        }
+
+    }
+
+    IEnumerator ActivatePlateAnim()
+    {
+        yield return new WaitForSeconds(1);
+        GetComponentInChildren<AnimatorController>().enabled = true;
+    }
 }
