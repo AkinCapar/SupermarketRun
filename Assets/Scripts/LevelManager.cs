@@ -14,7 +14,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] public GameObject danceCam;
     [SerializeField] public GameObject finalMeal;
     [SerializeField] public GameObject finalPlayer;
-    [SerializeField] public GameObject plateAnimations;
+    //[SerializeField] public GameObject plateAnimations;
 
     [Header("Ingredients")]
     [SerializeField] public GameObject ingredient1;
