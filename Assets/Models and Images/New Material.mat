@@ -7,10 +7,10 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Meatball
+  m_Name: New Material
   m_Shader: {fileID: 4800000, guid: 881c73b45dda42d4ba29f8c7742329be, type: 3}
   m_ShaderKeywords: _MK_ALBEDO_MAP _MK_LIGHTMODEL_LAMBERT _MK_LIGHTTYPE_CEL_SHADE_SIMPLE
-    _MK_MODE_TRANSPARENT _MK_RIM
+    _MK_MODE_TRANSPARENT
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -56,7 +56,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 4d80740364ab1a24abf0bed033b3ca3c, type: 3}
+        m_Texture: {fileID: 2800000, guid: e3663c5904f4d44df916043c209e3536, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -107,22 +107,22 @@ Material:
     - _DissolveRampSize: 0.25
     - _DstBlend: 0
     - _GlossMapScale: 1
-    - _Glossiness: 0
+    - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _LightCuts: 3
     - _LightModel: 1
-    - _LightSmoothness: 0.603
-    - _LightThreshold: 0.366
+    - _LightSmoothness: 0
+    - _LightThreshold: 0.3
     - _LightType: 1
     - _MKEditorShowDetailBehavior: 0
     - _MKEditorShowDissolveBehavior: 0
-    - _MKEditorShowLightBehavior: 1
+    - _MKEditorShowLightBehavior: 0
     - _MKEditorShowMainBehavior: 1
     - _MKEditorShowOutlineBehavior: 0
     - _MKEditorShowReflectionBehavior: 0
     - _MKEditorShowRenderBehavior: 1
-    - _MKEditorShowRimBehavior: 1
-    - _MKEditorShowShadowBehavior: 1
+    - _MKEditorShowRimBehavior: 0
+    - _MKEditorShowShadowBehavior: 0
     - _MKEditorShowSketchBehavior: 0
     - _MKEditorShowSpecularBehavior: 0
     - _MKEditorShowTranslucentBehavior: 0
@@ -133,12 +133,12 @@ Material:
     - _Parallax: 0.02
     - _ReflectIntensity: 0.5
     - _ReflectSmoothness: 0
-    - _RimIntensity: 0.392
-    - _RimSize: 2.24
-    - _RimSmoothness: 0.725
+    - _RimIntensity: 0.5
+    - _RimSize: 1.5
+    - _RimSmoothness: 0.5
     - _Roughness: 1
     - _Saturation: 1
-    - _ShadowIntensity: 0.95
+    - _ShadowIntensity: 1
     - _Shininess: 0.275
     - _SketchScale: 16
     - _SketchToneMax: 1
@@ -155,12 +155,12 @@ Material:
     - _UseDissolve: 0
     - _UseOutline: 0
     - _UseReflection: 0
-    - _UseRim: 1
+    - _UseRim: 0
     - _UseSketch: 0
     - _UseTranslucent: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 0.7529412}
     - _DetailColor: {r: 1, g: 1, b: 1, a: 1}
     - _DissolveColor: {r: 1, g: 1, b: 1, a: 0.5}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

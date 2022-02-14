@@ -46,7 +46,15 @@ public class SceneManagerAkin : MonoBehaviour
 
     public void LoadNextLevel()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(sceneNo + 1);
+        if (sceneNo == 3)
+        {
+            SceneManager.LoadScene(1);
+        }
+
+        else
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene(sceneNo + 1);
+        }
     }
 
     public void RestartLevel()

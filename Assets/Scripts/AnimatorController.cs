@@ -6,12 +6,12 @@ public class AnimatorController : MonoBehaviour
 {
     public Animator animOpen;
     public Animator animPingPong;
-     public Animator animDance;
+    // public Animator animDance;
     [SerializeField] GameObject shineEffect;
     [SerializeField] GameObject confettiParticleEffect1;
     [SerializeField] GameObject confettiParticleEffect2;
-    [SerializeField] GameObject cooker;
-    [SerializeField] private Cinemachine.CinemachineVirtualCamera firstCamera;
+    //[SerializeField] GameObject cooker;
+    //[SerializeField] private Cinemachine.CinemachineVirtualCamera firstCamera;
     void Start()
     {
         StartCoroutine(PlayAnim());
@@ -45,10 +45,10 @@ public class AnimatorController : MonoBehaviour
         yield return new WaitForSeconds(1f);
 
         // camera degis
-        firstCamera.enabled = false;
+        //firstCamera.enabled = false;
          yield return new WaitForSeconds(0.5f);
-        cooker.SetActive(true);
-        animDance.SetBool("Dance",true);
+        //cooker.SetActive(true);
+        //animDance.SetBool("Dance",true);
         shineEffect.transform.position = new Vector3(0.04f, 0.04f, -2.9f);
         yield return new WaitForSeconds(1f);
     }
